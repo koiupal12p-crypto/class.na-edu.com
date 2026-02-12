@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WPQ3R5GSC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- 1. Google Analytics (GA4) - G-XRGSFEF -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRGSFEF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XRGSFEF');
+    </script>
 
-  gtag('config', 'G-9WPQ3R5GSC');
-</script>
+    <!-- 2. Google Search Console Verification -->
+    <meta name="google-site-verification" content="google949f933c2bc2d0cb" />
+
+    <!-- إعدادات أساسية -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAEDU - منصة التعليم في أمريكا الشمالية</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
+    <!-- 3. إعداد النطاق (Domain) -->
+    <base href="https://class.na-edu.com/" />
+    <link rel="canonical" href="https://class.na-edu.com/" />
+
+    <!-- 4. تحسينات الأرشفة (SEO Meta Tags) -->
+    <title>NAEDU - منصة التعليم في أمريكا الشمالية | دورات معتمدة</title>
+    <meta name="description" content="منصة NAEDU (class.na-edu.com) هي وجهتك الأولى للتعليم عبر الإنترنت بمناهج أمريكية وشهادات معتمدة دولياً. سجل الآن وابدأ رحلتك نحو التميز.">
+    <meta name="keywords" content="تعليم عن بعد, دورات أونلاين, شهادات معتمدة, دراسة في أمريكا, لغة إنجليزية, برمجة, NAEDU, class.na-edu.com">
+    <meta name="author" content="NAEDU Platform">
+    <meta name="robots" content="index, follow">
+
+    <!-- وسوم المشاركة على وسائل التواصل (Open Graph / Social Media) -->
+    <meta property="og:title" content="NAEDU - منصة التعليم الرائدة">
+    <meta property="og:description" content="انضم إلى آلاف الطلاب في منصة NAEDU واحصل على تعليم بمستوى عالمي وشهادات معتمدة.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://class.na-edu.com/">
+    <meta property="og:type" content="website">
+
     <!-- خطوط جوجل (Tajawal للعربية) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,42 +65,39 @@
     </script>
     
     <style>
-        /* تأثيرات إضافية */
         .hero-bg {
-            background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-image: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
         }
-        .scroll-smooth {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="font-sans text-gray-700 bg-gray-50 scroll-smooth">
+<body class="font-sans text-gray-700 bg-gray-50 flex flex-col min-h-screen">
 
     <!-- شريط التنقل (Navbar) -->
-    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar" aria-label="القائمة الرئيسية">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <!-- الشعار -->
-                <a href="#" class="text-3xl font-bold text-primary flex items-center gap-2">
-                    <i class="fas fa-graduation-cap"></i>
+                <a href="https://class.na-edu.com/" class="text-3xl font-bold text-primary flex items-center gap-2" aria-label="الصفحة الرئيسية لـ NAEDU">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     NAEDU
                 </a>
 
                 <!-- القائمة للشاشات الكبيرة -->
                 <div class="hidden md:flex space-x-8 space-x-reverse items-center">
                     <a href="#home" class="text-gray-600 hover:text-primary transition font-medium">الرئيسية</a>
-                    <a href="#about" class="text-gray-600 hover:text-primary transition font-medium">من نحن</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition font-medium">عن المنصة</a>
                     <a href="#courses" class="text-gray-600 hover:text-primary transition font-medium">الدورات</a>
-                    <a href="#services" class="text-gray-600 hover:text-primary transition font-medium">الخدمات</a>
                     <a href="#contact" class="text-gray-600 hover:text-primary transition font-medium">اتصل بنا</a>
-                    <a href="#" class="bg-secondary text-white px-5 py-2 rounded-full hover:bg-primary transition shadow-lg transform hover:-translate-y-0.5">تسجيل الدخول</a>
+                    <a href="https://class.na-edu.com/login" class="bg-secondary text-white px-6 py-2 rounded-full hover:bg-primary transition shadow-md transform hover:-translate-y-0.5">تسجيل الدخول</a>
                 </div>
 
                 <!-- زر القائمة للموبايل -->
                 <div class="md:hidden">
-                    <button onclick="toggleMenu()" class="text-gray-600 hover:text-primary focus:outline-none">
+                    <button onclick="toggleMenu()" class="text-gray-600 hover:text-primary focus:outline-none" aria-label="فتح القائمة">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -86,248 +105,176 @@
             
             <!-- قائمة الموبايل المنسدلة -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-50 p-4 rounded-lg shadow-inner">
-                <a href="#home" class="block py-2 text-gray-600 hover:text-primary">الرئيسية</a>
-                <a href="#about" class="block py-2 text-gray-600 hover:text-primary">من نحن</a>
-                <a href="#courses" class="block py-2 text-gray-600 hover:text-primary">الدورات</a>
-                <a href="#contact" class="block py-2 text-gray-600 hover:text-primary">اتصل بنا</a>
-                <a href="#" class="block mt-2 text-center bg-secondary text-white px-4 py-2 rounded hover:bg-primary">تسجيل الدخول</a>
+                <a href="#home" class="block py-2 text-gray-600 hover:text-primary border-b border-gray-200">الرئيسية</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-primary border-b border-gray-200">عن المنصة</a>
+                <a href="#courses" class="block py-2 text-gray-600 hover:text-primary border-b border-gray-200">الدورات</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-primary border-b border-gray-200">اتصل بنا</a>
+                <a href="https://class.na-edu.com/login" class="block mt-4 text-center bg-secondary text-white px-4 py-2 rounded hover:bg-primary">تسجيل الدخول</a>
             </div>
         </div>
     </nav>
 
-    <!-- قسم الهيرو (Hero Section) -->
-    <header id="home" class="hero-bg h-screen flex items-center relative text-white">
-        <div class="container mx-auto px-6 text-center md:text-right relative z-10">
-            <div class="md:w-2/3">
-                <span class="bg-accent text-white px-3 py-1 rounded text-sm font-bold uppercase tracking-wider mb-4 inline-block">المنصة التعليمية الأولى</span>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    اصنع مستقبلك مع <br> 
-                    <span class="text-blue-200">التعليم في أمريكا الشمالية</span>
-                </h1>
-                <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-                    نقدم لك أفضل الفرص التعليمية والدورات المعتمدة عالمياً. انضم إلينا اليوم وابدأ رحلتك نحو التميز الأكاديمي والمهني.
-                </p>
-                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#courses" class="bg-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:-translate-y-1">تصفح الدورات</a>
-                    <a href="#contact" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-full transition">تواصل معنا</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- شكل جمالي في الأسفل -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
-            </svg>
-        </div>
-    </header>
-
-    <!-- قسم الإحصائيات -->
-    <section class="py-12 -mt-10 relative z-20">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-4xl text-secondary mb-2"><i class="fas fa-user-graduate"></i></div>
-                    <h3 class="text-3xl font-bold text-gray-800">5,000+</h3>
-                    <p class="text-gray-500">طالب نشط</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-4xl text-secondary mb-2"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3 class="text-3xl font-bold text-gray-800">120+</h3>
-                    <p class="text-gray-500">مدرس خبير</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-4xl text-secondary mb-2"><i class="fas fa-book-open"></i></div>
-                    <h3 class="text-3xl font-bold text-gray-800">300+</h3>
-                    <p class="text-gray-500">دورة تدريبية</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الخدمات (Services) -->
-    <section id="services" class="py-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-primary mb-4">لماذا تختار NAEDU؟</h2>
-                <div class="w-24 h-1 bg-accent mx-auto"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">نحن نوفر بيئة تعليمية متكاملة تجمع بين التكنولوجيا الحديثة والخبرة الأكاديمية.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- خدمة 1 -->
-                <div class="flex flex-col items-center text-center p-6 border border-gray-100 rounded-lg hover:shadow-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">تعليم عن بعد</h3>
-                    <p class="text-gray-500 text-sm">منصة متطورة تدعم الفصول الافتراضية والتعلم الذاتي من أي مكان في العالم.</p>
-                </div>
-                <!-- خدمة 2 -->
-                <div class="flex flex-col items-center text-center p-6 border border-gray-100 rounded-lg hover:shadow-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">شهادات معتمدة</h3>
-                    <p class="text-gray-500 text-sm">نمنح شهادات معترف بها دولياً تساعدك في تعزيز مسارك المهني.</p>
-                </div>
-                <!-- خدمة 3 -->
-                <div class="flex flex-col items-center text-center p-6 border border-gray-100 rounded-lg hover:shadow-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">مناهج أمريكية</h3>
-                    <p class="text-gray-500 text-sm">محتوى تعليمي عالي الجودة مستمد من أحدث المناهج في أمريكا الشمالية.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الدورات (Courses) -->
-    <section id="courses" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-3xl font-bold text-primary mb-2">الدورات المميزة</h2>
-                    <div class="w-20 h-1 bg-accent"></div>
-                </div>
-                <a href="#" class="text-secondary font-bold hover:text-primary transition">عرض الكل <i class="fas fa-arrow-left mr-1"></i></a>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- كارت دورة 1 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded">جديد</span>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between text-xs text-gray-500 mb-2">
-                            <span><i class="fas fa-clock ml-1"></i> 4 أسابيع</span>
-                            <span><i class="fas fa-star text-yellow-400 ml-1"></i> 4.8</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 hover:text-primary transition">اللغة الإنجليزية للأعمال</h3>
-                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">تعلم مهارات التواصل الاحترافي وكتابة التقارير باللغة الإنجليزية في بيئة العمل.</p>
-                        <div class="flex justify-between items-center border-t pt-4">
-                            <div class="flex items-center">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-8 h-8 rounded-full ml-2" alt="Instructor">
-                                <span class="text-sm font-medium">د. أحمد علي</span>
-                            </div>
-                            <span class="text-primary font-bold">$150</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كارت دورة 2 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between text-xs text-gray-500 mb-2">
-                            <span><i class="fas fa-clock ml-1"></i> 8 أسابيع</span>
-                            <span><i class="fas fa-star text-yellow-400 ml-1"></i> 4.9</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 hover:text-primary transition">أساسيات البرمجة بلغة Python</h3>
-                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">دورة شاملة للمبتدئين لتعلم أساسيات البرمجة وتحليل البيانات.</p>
-                        <div class="flex justify-between items-center border-t pt-4">
-                            <div class="flex items-center">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-8 h-8 rounded-full ml-2" alt="Instructor">
-                                <span class="text-sm font-medium">سارة جونز</span>
-                            </div>
-                            <span class="text-primary font-bold">$200</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كارت دورة 3 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded">خصم</span>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between text-xs text-gray-500 mb-2">
-                            <span><i class="fas fa-clock ml-1"></i> 6 أسابيع</span>
-                            <span><i class="fas fa-star text-yellow-400 ml-1"></i> 4.7</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 hover:text-primary transition">إدارة المشاريع الرقمية</h3>
-                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">تعلم كيفية قيادة الفرق التقنية وإدارة المشاريع بنجاح.</p>
-                        <div class="flex justify-between items-center border-t pt-4">
-                            <div class="flex items-center">
-                                <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-8 h-8 rounded-full ml-2" alt="Instructor">
-                                <span class="text-sm font-medium">مايكل سميث</span>
-                            </div>
-                            <span class="text-primary font-bold">$180</span>
-                        </div>
+    <!-- المحتوى الرئيسي للموقع -->
+    <main class="flex-grow">
+        <!-- قسم الهيرو (Hero Section) -->
+        <header id="home" class="hero-bg min-h-screen flex items-center relative text-white pt-20">
+            <div class="container mx-auto px-6 text-center md:text-right relative z-10">
+                <div class="md:w-2/3">
+                    <span class="bg-accent text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-6 inline-block shadow-lg">منصة class.na-edu.com الرسمية</span>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        اصنع مستقبلك مع <br> 
+                        <span class="text-blue-200 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">التعليم المعتمد</span>
+                    </h1>
+                    <p class="text-lg md:text-2xl mb-10 text-gray-100 leading-relaxed font-light">
+                        نقدم لك أفضل الفرص التعليمية بمناهج أمريكا الشمالية. انضم لآلاف الطلاب وابدأ رحلتك الأكاديمية اليوم.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#courses" class="bg-accent hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full shadow-xl transition transform hover:-translate-y-1 text-lg text-center">تصفح برامجنا</a>
+                        <a href="#about" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-4 px-10 rounded-full transition text-lg text-center">تعرف علينا أكثر</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <!-- شكل جمالي في الأسفل -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                <svg class="relative block w-full h-[80px] md:h-[120px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
+                </svg>
+            </div>
+        </header>
 
-    <!-- قسم التسجيل (CTA) -->
-    <section class="py-20 bg-primary text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">هل أنت مستعد لبدء رحلتك التعليمية؟</h2>
-            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">انضم إلى آلاف الطلاب الذين حققوا أهدافهم الأكاديمية والمهنية معنا.</p>
-            <button class="bg-accent text-white text-lg font-bold py-3 px-10 rounded-full hover:bg-orange-600 transition shadow-lg transform hover:scale-105">سجل مجاناً الآن</button>
-        </div>
-    </section>
+        <!-- قسم الإحصائيات - SEO friendly section -->
+        <section class="py-12 relative z-20 bg-gray-50" aria-label="إحصائيات المنصة">
+            <div class="container mx-auto px-6 -mt-20 md:-mt-28">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 border-b-4 border-secondary">
+                        <div class="text-5xl text-secondary mb-4"><i class="fas fa-user-graduate"></i></div>
+                        <h2 class="text-4xl font-extrabold text-gray-800 mb-2">+5,000</h2>
+                        <p class="text-gray-600 font-medium">طالب مسجل</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 border-b-4 border-accent">
+                        <div class="text-5xl text-accent mb-4"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h2 class="text-4xl font-extrabold text-gray-800 mb-2">+120</h2>
+                        <p class="text-gray-600 font-medium">أكاديمي وخبير</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 border-b-4 border-primary">
+                        <div class="text-5xl text-primary mb-4"><i class="fas fa-certificate"></i></div>
+                        <h2 class="text-4xl font-extrabold text-gray-800 mb-2">+300</h2>
+                        <p class="text-gray-600 font-medium">برنامج معتمد</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات (Services) -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">لماذا تختار منصة NAEDU؟</h2>
+                    <div class="w-24 h-1.5 bg-accent mx-auto rounded"></div>
+                    <p class="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">نحن نوفر بيئة تعليمية ذكية ومبتكرة عبر نطاقنا class.na-edu.com، مصممة لتلبية احتياجات سوق العمل العالمي.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <article class="flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl hover:bg-blue-50 transition duration-300">
+                        <div class="w-20 h-20 bg-white shadow-md rounded-full flex items-center justify-center text-primary text-3xl mb-6">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-800">تعليم تفاعلي عن بعد</h3>
+                        <p class="text-gray-600 leading-relaxed">منصة متطورة تدعم الفصول الافتراضية، التسجيلات، والتعلم الذاتي من أي مكان وفي أي وقت.</p>
+                    </article>
+                    
+                    <article class="flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl hover:bg-blue-50 transition duration-300">
+                        <div class="w-20 h-20 bg-white shadow-md rounded-full flex items-center justify-center text-primary text-3xl mb-6">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-800">شهادات موثقة</h3>
+                        <p class="text-gray-600 leading-relaxed">احصل على شهادات إتمام معترف بها دولياً تزيد من فرصك الوظيفية وتدعم سيرتك الذاتية.</p>
+                    </article>
+                    
+                    <article class="flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl hover:bg-blue-50 transition duration-300">
+                        <div class="w-20 h-20 bg-white shadow-md rounded-full flex items-center justify-center text-primary text-3xl mb-6">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-800">مناهج أمريكية</h3>
+                        <p class="text-gray-600 leading-relaxed">محتوى أكاديمي دقيق ومُحدث باستمرار مستمد من أفضل الممارسات التعليمية في أمريكا الشمالية.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الدعوة للتسجيل (CTA) -->
+        <section class="py-20 bg-primary text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'#ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">جاهز لبدء التعلم على class.na-edu.com؟</h2>
+                <p class="text-blue-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">بادر بالتسجيل الآن للوصول إلى مكتبة ضخمة من الدورات، المحاضرات المباشرة، والمواد التعليمية الحصرية.</p>
+                <a href="https://class.na-edu.com/register" class="inline-block bg-accent text-white text-lg font-bold py-4 px-12 rounded-full hover:bg-orange-500 transition shadow-xl transform hover:scale-105">أنشئ حسابك مجاناً</a>
+            </div>
+        </section>
+    </main>
 
     <!-- الفوتر (Footer) -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-16 mt-auto">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- عمود 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- عمود 1: النبذة -->
                 <div>
-                    <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
+                    <a href="https://class.na-edu.com/" class="text-3xl font-bold text-white flex items-center gap-2 mb-6">
                         <i class="fas fa-graduation-cap text-accent"></i>
                         NAEDU
                     </a>
-                    <p class="text-sm text-gray-400 mb-4">منصة رائدة في التعليم عبر الإنترنت، نربط بين الطلاب وأفضل المعلمين والبرامج من أمريكا الشمالية.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">نحن المنصة الرسمية NAEDU لتقديم المحتوى التعليمي عالي الجودة عبر الإنترنت، نهدف لتمكين المتعلمين في جميع أنحاء العالم.</p>
                     <div class="flex space-x-4 space-x-reverse">
-                        <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="فيسبوك" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="تويتر" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="لينكد إن" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
-                <!-- عمود 2 -->
+                <!-- عمود 2: روابط سريعة -->
                 <div>
-                    <h4 class="text-white font-bold text-lg mb-4">روابط سريعة</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-accent transition">عن المنصة</a></li>
-                        <li><a href="#" class="hover:text-accent transition">الدورات المتاحة</a></li>
-                        <li><a href="#" class="hover:text-accent transition">الأسئلة الشائعة</a></li>
-                        <li><a href="#" class="hover:text-accent transition">سياسة الخصوصية</a></li>
+                    <h4 class="text-white font-bold text-xl mb-6">روابط سريعة</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://class.na-edu.com/about" class="hover:text-accent transition flex items-center gap-2"><i class="fas fa-angle-left text-xs"></i> من نحن</a></li>
+                        <li><a href="https://class.na-edu.com/courses" class="hover:text-accent transition flex items-center gap-2"><i class="fas fa-angle-left text-xs"></i> تصفح الدورات</a></li>
+                        <li><a href="https://class.na-edu.com/faq" class="hover:text-accent transition flex items-center gap-2"><i class="fas fa-angle-left text-xs"></i> الأسئلة الشائعة</a></li>
+                        <li><a href="https://class.na-edu.com/terms" class="hover:text-accent transition flex items-center gap-2"><i class="fas fa-angle-left text-xs"></i> الشروط والأحكام</a></li>
                     </ul>
                 </div>
 
-                <!-- عمود 3 -->
+                <!-- عمود 3: التواصل -->
                 <div>
-                    <h4 class="text-white font-bold text-lg mb-4">اتصل بنا</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center"><i class="fas fa-map-marker-alt ml-2 text-accent"></i> نيويورك، الولايات المتحدة</li>
-                        <li class="flex items-center"><i class="fas fa-phone ml-2 text-accent"></i> +1 234 567 890</li>
-                        <li class="flex items-center"><i class="fas fa-envelope ml-2 text-accent"></i> info@na-edu.com</li>
+                    <h4 class="text-white font-bold text-xl mb-6">معلومات التواصل</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-accent text-lg"></i> 
+                            <span>الولايات المتحدة الأمريكية،<br>أمريكا الشمالية</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-accent text-lg"></i> 
+                            <a href="mailto:info@class.na-edu.com" class="hover:text-white transition">info@class.na-edu.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-globe text-accent text-lg"></i> 
+                            <a href="https://class.na-edu.com" class="hover:text-white transition">class.na-edu.com</a>
+                        </li>
                     </ul>
                 </div>
 
-                <!-- عمود 4 -->
+                <!-- عمود 4: النشرة البريدية -->
                 <div>
-                    <h4 class="text-white font-bold text-lg mb-4">النشرة البريدية</h4>
-                    <p class="text-sm text-gray-400 mb-4">اشترك للحصول على آخر الأخبار والعروض.</p>
-                    <form class="flex flex-col gap-2">
-                        <input type="email" placeholder="بريدك الإلكتروني" class="bg-gray-800 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-accent">
-                        <button type="button" class="bg-secondary text-white px-4 py-2 rounded hover:bg-primary transition">اشتراك</button>
+                    <h4 class="text-white font-bold text-xl mb-6">النشرة البريدية</h4>
+                    <p class="text-sm text-gray-400 mb-4">اشترك ليصلك جديد الدورات والأخبار.</p>
+                    <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني" required aria-label="البريد الإلكتروني" class="bg-gray-800 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-accent border border-gray-700">
+                        <button type="submit" class="bg-secondary text-white font-bold px-4 py-3 rounded hover:bg-primary transition w-full">اشترك الآن</button>
                     </form>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-                <p>&copy; 2024 NAEDU. جميع الحقوق محفوظة.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 NAEDU (class.na-edu.com). جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
@@ -340,7 +287,7 @@
             menu.classList.toggle('hidden');
         }
 
-        // تغيير لون الناف بار عند التمرير
+        // تغيير مظهر الناف بار عند التمرير
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -351,5 +298,6 @@
                 navbar.classList.add('py-4');
             }
         });
+    </script>
 </body>
 </html>
